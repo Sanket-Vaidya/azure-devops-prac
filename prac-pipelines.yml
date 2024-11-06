@@ -10,8 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-- stage : stage A
-  displayName: This is Stage A
+- stage: Build
+  displayName: 'This is Stage A'
   jobs: 
   - job: A1
     steps:
