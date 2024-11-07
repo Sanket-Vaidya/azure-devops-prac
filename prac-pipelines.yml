@@ -17,6 +17,7 @@ stages:
     steps:
     - bash: echo "Job 1"
   - job: A2
+    dependsOn: A1
     steps:
     - bash: echo "Job 2"
 
