@@ -11,6 +11,7 @@ pool:
 
 stages:
 - stage: Build
+  dependsOn: []
   displayName: 'This is Stage A'
   jobs: 
   - job: A1
@@ -22,6 +23,7 @@ stages:
     - bash: echo "Job 2"
 
 - stage: Deploy
+  dependsOn: []
   displayName: 'This is stage B'
   jobs:
   - job: B1
