@@ -14,10 +14,10 @@ stages:
   displayName: 'This is Stage A'
   jobs: 
   - job: A1
+    dependsOn: A2
     steps:
     - bash: echo "Job 1"
   - job: A2
-    dependsOn: A1
     steps:
     - bash: echo "Job 2"
 
