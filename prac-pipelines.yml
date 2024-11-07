@@ -20,3 +20,14 @@ stages:
     steps:
     - bash: echo "Job 2"
 
+- stage: Deploy
+  displayName: 'This is stage B'
+  jobs:
+  - job: B1
+    steps: 
+    - bash: echo "Job B1"
+    
+  - job: B2
+    steps: 
+    - bash: echo "Job B2"
+
